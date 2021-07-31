@@ -17,7 +17,6 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 }, appearOptions);
 
 faders.forEach(fader => {
+    console.log(fader);
     appearOnScroll.observe(fader);
 });
-
-console.log(1);
