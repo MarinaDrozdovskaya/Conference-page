@@ -1,6 +1,5 @@
 window.onload = () => {
     const faders = document.querySelectorAll('.fade-in');
-    console.log(faders);
 
     const appearOptions = {
         //threshold: 0.1,
