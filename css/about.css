@@ -1,0 +1,36 @@
+#about {
+    position: relative;
+    padding: 1rem 30rem 1rem 15rem;
+}
+
+.quote {
+    position: absolute;
+    right: 6rem;
+    width: 20vw;
+    top: 40%;
+}
+
+blockquote {
+    font: 14px/22px normal helvetica, sans-serif;
+    padding-left: 15px;
+    border-left: 3px solid #ccc;
+    font-style: italic;
+}
+
+@media (max-width: 1300px) {
+
+    #about {
+        padding: 1rem 7rem;
+    }  
+    .quote {
+        position: static;
+        width: 60vw;
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #about {
+        padding: 1rem 3rem;
+    }
+}
