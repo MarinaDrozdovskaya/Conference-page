@@ -1,0 +1,55 @@
+@import url("./header.css");
+@import url("./navigation.css");
+@import url("./about.css");
+@import url("./programme.css");
+@import url("./coronavirus.css");
+@import url("./logistics.css");
+@import url("./contacts.css");
+@import url("./speakers.css");
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body { 
+    padding: 64px 0 0 0; 
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+h2 {
+    text-align: center;
+    padding: 3rem;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+}
+
+p {
+    overflow-wrap: break-word;
+}
+
+.page-section {
+    padding: 3rem 20rem;
+}
+
+@media (max-width: 1300px) {
+    .page-section {
+        padding: 1rem 5rem;
+    }
+}
+
+@media (max-width: 500px) {    
+    .page-section {
+        padding: 1rem;
+    }
+}
