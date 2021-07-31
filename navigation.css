@@ -1,0 +1,111 @@
+#logoImage {
+    width: 3rem;
+    height: 3rem;
+}
+
+#logoImage img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 0.2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#navbarNav {
+    justify-content: space-around;
+}
+
+.nav-link {
+    text-align: center;
+}
+
+.fa-virus {
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    color: rgb(194, 31, 31);
+}
+
+.socialMedia {
+    display: flex;
+} 
+
+.socialMediaIcon {
+    margin: 0.2rem;
+}
+
+.socialMediaIcon a {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.registration-button {
+    padding: 0.5rem 1.3rem;
+    border-radius: 1rem;
+    border: 0.1rem solid  rgba(255,255,255,0.6);
+    background: linear-gradient(to right, rgba(64,177,175,255),rgba(57,154,83,255));
+    transition: all ease 1s;
+}
+
+.registration-button div a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #cdff62; 
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-button div a i {
+    color: #cdff62;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+.registration-button a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #cdff62; 
+    text-transform: uppercase;
+}
+
+.registration-button:hover {
+    background: linear-gradient(to left, rgba(64,177,175,255),rgba(57,154,83,255));
+}
+
+.registration-button:hover > div > a > i {
+    
+    animation: registration-button-animation 1s ease infinite;
+}
+
+@keyframes registration-button-animation {
+    0%   { transform: translateY(0); }
+    33%  { transform: translateY(-3px); }
+    66%  { transform: translateY(3px); }
+    100% { transform: translateY(0); }
+}
+
+
+@media (max-width: 1200px) {
+    .socialMedia {
+        display: none;
+    } 
+    .registration-button {
+        margin-right: 0.2rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .registration-button {
+        display: none;
+    }
+    .fa-virus {
+        display: none !important;
+    }
+}
