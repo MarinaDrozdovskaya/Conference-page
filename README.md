@@ -1,2 +1,2 @@
 # conference
-A langing page for an event.
+A landing page for an event.
