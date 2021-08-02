@@ -1,3 +1,28 @@
-strong {
-    color: red;
+#coronavirus-heading-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.fa-exclamation-triangle {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#coronavirus-heading {
+    padding: 1rem;
+}
+
+@media (max-width: 600px) {
+
+ #coronavirus-heading-container {
+     flex-direction: column;
+ }
+
+ #coronavirus-heading-container h2, #coronavirus-heading-container i {
+     font-size: 1.2rem;
+     padding: 0.5rem;
+ }
 }

@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Конференция пройдет в Кенозерском национальном парке с 10 по 16 сентября 2021. В этот раз основой конференции будут практические треки. Каждый участник сможет принять участие в одном треке - но зато погрузиться в выбранную тему максимально глубоко и не только научиться новым методам работы, но и под руководством спикеров и кураторов пройти путь до получения первого продукта.">
     <title>TestConference</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/2427fb0d28.js" crossorigin="anonymous"></script>
     <title>V Конференция Сообщества природоохранных ГИС в России</title>
     <meta property="og:url" content="http://scgisrussia.ru/conf2021">
@@ -34,12 +34,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
         <ul class="navbar-nav collapse navbar-collapse" id='navbar-list'>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" name="about" href="#about">О конференции</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" name="participation" href="#participation">Участие</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" name="programme" href="#programme">Программа</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" name="logistics" href="#logistics">Логистика</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" name="contacts" href="#contacts">Контакты</a></li>
-          <li class="nav-item"><a class="nav-link active" id='coronavirus-heading' aria-current="page" name="coronavirus" href="#coronavirus">Коронавирус</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#about">О конференции</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#participation">Участие</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#programme" >Программа</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#logistics">Логистика</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#contacts">Контакты</a></li>
+          <li class="nav-item"><a class="nav-link active coronavirus" id='coronavirus-menu' aria-current="page" href="#coronavirus-section">Коронавирус</a></li>
         </ul>
         <div class="socialMedia">
            <div class='socialMediaIcon' id="facebook"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
@@ -56,6 +56,8 @@
         </a>
 
   </nav>
+
+  <!-- The Header -->
 
   <header>
     <h1 id='title'>V Конференция Сообщества природоохранных ГИС <br> в России</h1><br>
@@ -76,8 +78,12 @@
 
     <!-- The Coronavirus section -->
 
-  <section class="page-section fade-in" id="coronavirus">
-    <h2 class='section-heading' id='coronavirus-heading'>!!!ВАЖНО!!! ПРОТИВОКОРОНАВИРУСНЫЕ МЕРЫ</h2>
+  <section class="page-section fade-in" id='coronavirus-section'> 
+    <div class="coronavirus" id='coronavirus-heading-container'>
+      <i class="fas fa-exclamation-triangle"></i>
+      <h2 class='section-heading coronavirus' id='coronavirus-heading'>ПРОТИВОКОРОНАВИРУСНЫЕ МЕРЫ</h2>
+      <i class="fas fa-exclamation-triangle"></i>
+    </div>
     <p>Для участия в Конференции <strong>СТРОГО НЕОБХОДИМО</strong> предоставить один из трех документов:
       сертификат о вакцинации;
       справка о наличии антител IgG;
@@ -88,64 +94,64 @@
 
     <!-- The Speakers section -->
 
-  <section class="page-section fade-in" id='speakers'>
-    <h2 class='section-heading'>КЛЮЧЕВЫЕ СПИКЕРЫ</h2>
-    <div class="speakers-gallery">
-      <div class="speaker">
+  <section class="page-section" id='speakers'>
+    <h2 class='section-heading fade-in'>КЛЮЧЕВЫЕ СПИКЕРЫ</h2>
+    <div class="speakers-gallery fade-in">
+      <div class="speaker fade-in">
         <img src="./images/speakers/photo_2021-07-27_13-43-14.jpg" alt="Julia Photo">
         <span class="name">Юлия Зенкевич</span>
         <span class="location">Москва, Россия</span>
         <span class="speaker-description">ГИС-лаборатория российского отделения Гринпис</span>
       </div>
-      <div class="speaker">
+      <div class="speaker fade-in">
         <img src="./images/speakers/photo_2021-07-27_13-43-14.jpg" alt="Julia Photo">
         <span class="name">Юлия Зенкевич</span>
         <span class="location">Москва, Россия</span>
         <span class="speaker-description">ГИС-лаборатория российского отделения Гринпис</span>
       </div>
-      <div class="speaker">
+      <div class="speaker fade-in">
         <img src="./images/speakers/photo_2021-07-27_13-43-14.jpg" alt="Julia Photo">
         <span class="name">Юлия Зенкевич</span>
         <span class="location">Москва, Россия</span>
         <span class="speaker-description">ГИС-лаборатория российского отделения Гринпис</span>
       </div>
-      <div class="speaker">
+      <div class="speaker fade-in">
         <img src="./images/speakers/photo_2021-07-27_13-43-14.jpg" alt="Julia Photo">
         <span class="name">Юлия Зенкевич</span>
         <span class="location">Москва, Россия</span>
         <span class="speaker-description">ГИС-лаборатория российского отделения Гринпис</span>
       </div>
-      <div class="speaker">
+      <div class="speaker fade-in">
         <img src="./images/speakers/photo_2021-07-27_13-43-14.jpg" alt="Julia Photo">
         <span class="name">Юлия Зенкевич</span>
         <span class="location">Москва, Россия</span>
         <span class="speaker-description">ГИС-лаборатория российского отделения Гринпис</span>
       </div>
-      <div class="speaker">
+      <div class="speaker fade-in">
         <img src="./images/speakers/photo_2021-07-27_13-43-14.jpg" alt="Julia Photo">
         <span class="name">Юлия Зенкевич</span>
         <span class="location">Москва, Россия</span>
         <span class="speaker-description">ГИС-лаборатория российского отделения Гринпис</span>
       </div>
-      <div class="speaker">
+      <div class="speaker fade-in">
         <img src="./images/speakers/photo_2021-07-27_13-43-14.jpg" alt="Julia Photo">
         <span class="name">Юлия Зенкевич</span>
         <span class="location">Москва, Россия</span>
         <span class="speaker-description">ГИС-лаборатория российского отделения Гринпис</span>
       </div>
-      <div class="speaker">
+      <div class="speaker fade-in">
         <img src="./images/speakers/photo_2021-07-27_13-43-14.jpg" alt="Julia Photo"> 
         <span class="name">Юлия Зенкевич</span>
         <span class="location">Москва, Россия</span>
         <span class="speaker-description">ГИС-лаборатория российского отделения Гринпис</span>
       </div>
-      <div class="speaker">
+      <div class="speaker fade-in">
         <img src="./images/speakers/photo_2021-07-27_13-43-14.jpg" alt="Julia Photo">
         <span class="name">Юлия Зенкевич</span>
         <span class="location">Москва, Россия</span>
         <span class="speaker-description">ГИС-лаборатория российского отделения Гринпис</span>
       </div>
-      <div class="speaker">
+      <div class="speaker fade-in">
         <img src="./images/speakers/photo_2021-07-27_13-43-14.jpg" alt="Julia Photo">
         <span class="name">Юлия Зенкевич</span>
         <span class="location">Москва, Россия</span>
@@ -188,8 +194,8 @@
           </tbody>
       </table>
       </section>
-      <h2 class='section-heading'>ПРАКТИЧЕСКИЕ ТРЕКИ</h2>
-      <div class="accordion" id="tracks">
+      <h2 class='section-heading fade-in'>ПРАКТИЧЕСКИЕ ТРЕКИ</h2>
+      <div class="accordion fade-in" id="tracks">
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">

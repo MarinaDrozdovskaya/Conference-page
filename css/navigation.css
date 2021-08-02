@@ -26,7 +26,7 @@
     text-align: center;
 }
 
-#coronavirus-heading {
+#coronavirus-menu {
     font-weight: bold;
     padding-left: 3rem;
     color: rgb(194, 31, 31);
@@ -125,7 +125,7 @@ a .registration-button:hover > div > i {
     .nav-link {
         font-size: 0.7rem;
     }
-    #coronavirus-heading {
+    #coronavirus-menu {
         padding-left: 1rem;
     }
     
@@ -135,7 +135,7 @@ a .registration-button:hover > div > i {
     #registration-link {
         display: none;
     }
-    #coronavirus-heading {
+    #coronavirus-menu {
         padding-left: 0;
     }
 
