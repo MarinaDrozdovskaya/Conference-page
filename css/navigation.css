@@ -10,23 +10,24 @@
     padding: 0.2rem;
 }
 
-nav {
+#navbarNav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: white;
 }
 
-#navbarNav {
-    justify-content: space-around;
+#navbarNav ul {
+    justify-content: center;
+    flex-grow: inherit;
 }
 
 .nav-link {
     text-align: center;
 }
 
-.fa-virus {
-    font-size: 1.5rem;
+#coronavirus-heading {
+    font-weight: bold;
     padding-left: 3rem;
     color: rgb(194, 31, 31);
 }
@@ -105,24 +106,42 @@ a .registration-button:hover > div > i {
 
 
 @media (max-width: 1200px) {
+    .container {
+        margin: 0;
+    }
     .socialMedia {
         display: none;
     } 
     .registration-button {
         margin-right: 0.2rem;
         padding: 0.3rem;
+        font-size: smaller;
     }
-    .fa-virus {
-        display: none !important;
+    #register-icon {
+        color: #cdff62;
+        font-size: 1rem;
+        padding-right: 1rem;
     }
     .nav-link {
         font-size: 0.7rem;
     }
+    #coronavirus-heading {
+        padding-left: 1rem;
+    }
+    
 }
 
 @media (max-width: 600px) {
-    .registration-button {
+    #registration-link {
         display: none;
+    }
+    #coronavirus-heading {
+        padding-left: 0;
+    }
+
+    #navbarNav {
+        justify-content: space-between;
+        padding: 0 1rem 0 1rem;
     }
 
 }

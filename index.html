@@ -24,22 +24,22 @@
 
   <!-- The Navigation panel -->
 
-  <nav class='navbar navbar-expand-md menu shadow fixed-top navbar-light'>
-    <div class="container">
-      <a href="http://scgisrussia.ru/" target='_blank'>
-       <div class="navbar-brand" id="logoImage"><img src="./images/logo.jpg" alt="scgis logo"></div>
-      </a>
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class='navbar navbar-expand-md menu shadow fixed-top navbar-light' id="navbarNav">
+      <div class="navbar-brand" id="logoImage">
+        <a href="http://scgisrussia.ru/" target='_blank' id='logo-main-page'>
+          <img src="./images/logo.jpg" alt="scgis logo">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-list" aria-controls="navbar-list" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav collapse navbar-collapse" id='navbar-list'>
           <li class="nav-item"><a class="nav-link active" aria-current="page" name="about" href="#about">О конференции</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" name="participation" href="#participation">Участие</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" name="programme" href="#programme">Программа</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" name="logistics" href="#logistics">Логистика</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" name="contacts" href="#contacts">Контакты</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" name="contacts" href="#coronavirus"><i class="fas fa-virus"></i></a></li>
+          <li class="nav-item"><a class="nav-link active" id='coronavirus-heading' aria-current="page" name="coronavirus" href="#coronavirus">Коронавирус</a></li>
         </ul>
         <div class="socialMedia">
            <div class='socialMediaIcon' id="facebook"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
@@ -54,8 +54,7 @@
             </div>
           </button>
         </a>
-        </div>
-      </div>
+
   </nav>
 
   <header>
@@ -78,7 +77,7 @@
     <!-- The Coronavirus section -->
 
   <section class="page-section fade-in" id="coronavirus">
-    <h2 id='coronavirus-heading'>!!!ВАЖНО!!! ПРОТИВОКОРОНАВИРУСНЫЕ МЕРЫ</h2>
+    <h2 class='section-heading' id='coronavirus-heading'>!!!ВАЖНО!!! ПРОТИВОКОРОНАВИРУСНЫЕ МЕРЫ</h2>
     <p>Для участия в Конференции <strong>СТРОГО НЕОБХОДИМО</strong> предоставить один из трех документов:
       сертификат о вакцинации;
       справка о наличии антител IgG;
@@ -90,7 +89,7 @@
     <!-- The Speakers section -->
 
   <section class="page-section fade-in" id='speakers'>
-    <h2>КЛЮЧЕВЫЕ СПИКЕРЫ</h2>
+    <h2 class='section-heading'>КЛЮЧЕВЫЕ СПИКЕРЫ</h2>
     <div class="speakers-gallery">
       <div class="speaker">
         <img src="./images/speakers/photo_2021-07-27_13-43-14.jpg" alt="Julia Photo">
@@ -158,7 +157,7 @@
     <!-- The Programme section -->
 
     <section class='page-section fade-in' id='programme'>
-      <h2>Расписание треков</h2>
+      <h2 class='section-heading'>Расписание треков</h2>
       <section class='table-responsive-sm' id='tracks-timetable'>
         <table class='table table-hover'>
           <thead> <!-- Блок с заголовками -->
@@ -189,7 +188,7 @@
           </tbody>
       </table>
       </section>
-      <h2>ПРАКТИЧЕСКИЕ ТРЕКИ</h2>
+      <h2 class='section-heading'>ПРАКТИЧЕСКИЕ ТРЕКИ</h2>
       <div class="accordion" id="tracks">
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingOne">

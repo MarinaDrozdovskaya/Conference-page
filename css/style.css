@@ -24,11 +24,12 @@ body {
     opacity: 1;
 }
 
-h2 {
+.section-heading {
     text-align: center;
     padding: 3rem;
     text-transform: uppercase;
     overflow-wrap: break-word;
+    font-weight: bolder;
 }
 
 p {
