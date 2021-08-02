@@ -141,7 +141,7 @@ a .registration-button:hover > div > i {
 
     #navbarNav {
         justify-content: space-between;
-        padding: 0 1rem 0 1rem;
+        padding: 0.5rem;
     }
 
 }
