@@ -20,6 +20,9 @@ header h1, header p {
     header p, header h1 {
         padding: 0 3rem;
     }
+    #title {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 500px) {

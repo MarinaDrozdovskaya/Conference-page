@@ -7,15 +7,12 @@
 @import url("./contacts.css");
 @import url("./speakers.css");
 
-
-html {
-    scroll-behavior: smooth;
-  }
-
 body { 
     padding: 64px 0 0 0; 
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif !important;
 } 
 
 .fade-in {
@@ -36,6 +33,10 @@ h2 {
 
 p {
     overflow-wrap: break-word;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 .page-section {

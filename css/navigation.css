@@ -44,6 +44,19 @@ nav {
     font-size: 1.5rem;
 }
 
+#facebook a i {
+    color: #3b5998;
+}
+
+#vk a i {
+    color: #2787F5;
+}
+
+#twitter a i {
+    color: 	#1DA1F2;
+}
+
+
 .registration-button {
     color: #cdff62; 
     font-weight: bold;
@@ -56,7 +69,6 @@ nav {
 }
 
 #registration-link {
-    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,14 +110,19 @@ a .registration-button:hover > div > i {
     } 
     .registration-button {
         margin-right: 0.2rem;
-    }
-}
-
-@media (max-width: 770px) {
-    .registration-button {
-        display: none;
+        padding: 0.3rem;
     }
     .fa-virus {
         display: none !important;
     }
+    .nav-link {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .registration-button {
+        display: none;
+    }
+
 }
