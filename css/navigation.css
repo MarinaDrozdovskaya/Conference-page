@@ -45,6 +45,9 @@ nav {
 }
 
 .registration-button {
+    color: #cdff62; 
+    font-weight: bold;
+    text-transform: uppercase;
     padding: 0.5rem 1.3rem;
     border-radius: 1rem;
     border: 0.1rem solid  rgba(255,255,255,0.6);
@@ -52,23 +55,20 @@ nav {
     transition: all ease 1s;
 }
 
-.registration-button div a {
+#registration-link {
     text-decoration: none;
-    font-weight: bold;
-    color: #cdff62; 
-    text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.registration-button div a i {
+#register-icon {
     color: #cdff62;
     font-size: 1.5rem;
     padding-right: 1rem;
 }
 
-.registration-button a:hover {
+#registration-link:hover {
     text-decoration: none;
     font-weight: bold;
     color: #cdff62; 
@@ -79,7 +79,7 @@ nav {
     background: linear-gradient(to left, rgba(64,177,175,255),rgba(57,154,83,255));
 }
 
-.registration-button:hover > div > a > i {
+a .registration-button:hover > div > i {
     
     animation: registration-button-animation 1s ease infinite;
 }
