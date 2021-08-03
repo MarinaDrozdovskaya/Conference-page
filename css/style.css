@@ -7,6 +7,10 @@
 @import url("./contacts.css");
 @import url("./speakers.css");
 
+/* * {
+    border: solid 2px red;
+} */
+
 body { 
     padding: 64px 0 0 0; 
     margin: 0;
@@ -26,10 +30,15 @@ body {
 
 .section-heading {
     text-align: center;
-    padding: 3rem;
+    padding: 1.5rem 5rem;
     text-transform: uppercase;
     overflow-wrap: break-word;
     font-weight: bolder;
+}
+
+
+.page-section {
+    padding: 3rem 20rem;
 }
 
 p {
@@ -38,24 +47,43 @@ p {
 
 a {
     text-decoration: none !important;
+    color: #8cb107; 
 }
 
-.page-section {
-    padding: 3rem 20rem;
-}
 
 .coronavirus {
     color: rgb(194, 31, 31);
 }
 
+.accordion {
+    padding: 0rem 5rem 0rem 5rem;
+}
+
 @media (max-width: 1300px) {
     .page-section {
+        padding: 1rem 7rem;
+    }
+    .accordion {
+        padding: 0rem 3rem 0rem 3rem;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .page-section {
         padding: 1rem 5rem;
+    }
+
+    .section-heading {
+        padding: 1.5rem 2rem;
     }
 }
 
 @media (max-width: 500px) {    
     .page-section {
-        padding: 1rem;
+        padding: 1.5rem;
+    }
+    .accordion {
+        padding: 0rem 1rem 0rem 1rem;
     }
 }

@@ -6,9 +6,9 @@
     padding-bottom: 1rem;
 }
 
-.fa-exclamation-triangle {
+#coronavirus-heading-container i {
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #coronavirus-heading {

@@ -5,9 +5,9 @@
 
 .quote {
     position: absolute;
-    right: 6rem;
-    width: 20vw;
-    top: 40%;
+    right: 10rem;
+    width: 15vw;
+    top: 30%;
 }
 
 blockquote {
@@ -20,12 +20,18 @@ blockquote {
 @media (max-width: 1300px) {
 
     #about {
-        padding: 1rem 7rem;
+        padding: 1rem 10rem;
     }  
     .quote {
         position: static;
         width: 60vw;
         padding-top: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #about {
+        padding: 1rem 7rem;
     }
 }
 
