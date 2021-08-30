@@ -19,6 +19,11 @@ body {
     font-family: 'Montserrat', sans-serif !important;
 } 
 
+* p::selection {
+    background-color: #3f915b;
+    color: white;
+}
+
 .fade-in {
     opacity: 0;
     transition: opacity 200ms ease-in;
